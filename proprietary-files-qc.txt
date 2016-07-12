@@ -396,3 +396,6 @@ vendor/lib64/lib-rtpsl.so
 vendor/lib64/libvoice-svc.so
 vendor/lib64/libvcel.so
 
+# Assertive Display
+-etc/ad_calib.cfg
+
