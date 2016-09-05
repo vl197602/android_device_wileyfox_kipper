@@ -251,7 +251,7 @@ again:
 						mPendingEvent.timestamp -= sysclk_sync_offset;
 						if (mEnabled) {
 							*data++ = mPendingEvent;
- 							numEventReceived++;
+							numEventReceived++;
 							count--;
 						}
 					}

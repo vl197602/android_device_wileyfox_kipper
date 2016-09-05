@@ -28,6 +28,7 @@
 #include <CalibrationManager.h>
 #include <sensors_extension.h>
 #include <utils/SystemClock.h>
+
 /*****************************************************************************/
 
 struct sensors_event_t;
@@ -48,10 +49,12 @@ protected:
 	int input_sysfs_path_len;
 	int mEnabled;
 	int mHasPendingMetadata;
-        int64_t sysclk_sync_offset;
+	int64_t sysclk_sync_offset;
+
 	int openInput(const char* inputName);
 	static int64_t getTimestamp();
-        static int64_t getClkOffset();
+	static int64_t getClkOffset();
+
 
 	static int64_t timevalToNano(timeval const& t) {
 		return t.tv_sec*1000000000LL + t.tv_usec*1000;
