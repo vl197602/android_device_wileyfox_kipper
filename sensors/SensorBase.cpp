@@ -105,6 +105,9 @@ int64_t SensorBase::getTimestamp() {
     clock_gettime(CLOCK_MONOTONIC, &t);
     return int64_t(t.tv_sec)*1000000000LL + t.tv_nsec;
 }
+int64_t SensorBase::getClkOffset() {
+     return (getTimestamp() - android::elapsedRealtimeNano());
+ }
 
 int SensorBase::openInput(const char* inputName) {
     int fd = -1;
