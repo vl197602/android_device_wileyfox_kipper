@@ -1,1 +1,3 @@
-allow ueventd sensors_sysfs:file rw_file_perms;
+#============= ueventd ==============
+allow ueventd vfat:dir search;
+allow ueventd vfat:file { getattr open read };

@@ -4,3 +4,5 @@ allow system_server sensors_sysfs:dir search;
 allow system_server sensors_sysfs:file rw_file_perms;
 allow system_server touchpanel_sysfs:dir search;
 allow system_server touchpanel_sysfs:file rw_file_perms;
+allow system_server mpctl_data_file:dir search;
+allow system_server mpctl_data_file:sock_file write;

@@ -1,5 +1,2 @@
 # Hardware revision
 ro.product.model.platform=1
-# Assertive Display
-ro.qcom.ad=1
-ro.qcom.ad.calib.data=/system/etc/ad_calib.cfg    
