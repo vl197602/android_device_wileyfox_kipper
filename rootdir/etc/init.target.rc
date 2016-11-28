@@ -114,3 +114,14 @@ service cktnv /system/bin/cktnvtool
     group root
     class late_start
     oneshot
+
+service qcom-sh /system/bin/sh /init.qcom.sh
+     class late_start
+     user root
+     oneshot
+ 
+service bms-sh /system/bin/sh /init.qcom.bms.sh
+     class main
+     user root
+     oneshot 
+	
