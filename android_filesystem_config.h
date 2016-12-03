@@ -35,7 +35,8 @@
       { 00755, AID_SYSTEM,         AID_SYSTEM,         (1ULL << CAP_NET_BIND_SERVICE), "system/bin/pm-service"},
       { 00755, AID_SYSTEM,         AID_SYSTEM,         (1ULL << CAP_NET_BIND_SERVICE), "system/bin/imsdatadaemon" },
       { 00755, AID_SYSTEM,         AID_SYSTEM,         (1ULL << CAP_NET_RAW), "system/bin/imsdatadaemon" },
-      { 00755, AID_SYSTEM,         AID_SYSTEM,         (1ULL << CAP_NET_BIND_SERVICE), "system/bin/ims_rtp_daemon" },
-      { 00755, AID_SYSTEM,         AID_SYSTEM,         (1ULL << CAP_NET_RAW), "system/bin/ims_rtp_daemon" },
+      { 00755, AID_SYSTEM,         AID_RADIO,          (1ULL << CAP_NET_BIND_SERVICE), "system/bin/ims_rtp_daemon" },
+      { 00755, AID_SYSTEM,         AID_RADIO,          (1ULL << CAP_NET_RAW), "system/bin/ims_rtp_daemon" },
 };
+
 
